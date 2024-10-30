@@ -38,9 +38,11 @@ h2 {
 header p {
     font-family: 'Roboto', sans-serif;
     font-family: 300;
+    font-size: 1rem;
+    letter-spacing: .5rem;
 }
 
-.quality .row h2 {
+.quality .row .row-item h2 {
     color:#824936;
 }
 
@@ -52,14 +54,31 @@ header p {
 
 .row {
     display: flex;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
-    border: 2px solid red;
+    justify-content: center;
+    text-align: center;
+}
+  
+.row-item {
+    flex: 1;
+    padding: 10px;
+}
+  
+.col {
+    flex: 1;
+    padding: 10px;
 }
 
 header {
     background: #f3eed9;
     padding: .5em 0;
     text-align: center;
+    min-height: 660px;
+    align-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .main {
@@ -68,6 +87,8 @@ header {
 
 .quality {
     background-color: white;
+    display:flex;
+    flex-direction: column;
 }
 
 .custom {
