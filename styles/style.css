@@ -21,8 +21,27 @@ img {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight:900;
+    color: #824936;
     margin-top: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #F3eed9;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-family: 300;
+}
+
+.quality .row h2 {
+    color:#824936;
 }
 
 .container {
@@ -33,11 +52,14 @@ h1 {
 
 .row {
     display: flex;
+    align-items: center;
+    border: 2px solid red;
 }
 
 header {
     background: #f3eed9;
     padding: .5em 0;
+    text-align: center;
 }
 
 .main {
@@ -52,7 +74,7 @@ header {
     background: #222C2A;
 }
 
-.custom img {
+.custom .row img {
     float: right;
 }
 
@@ -60,6 +82,6 @@ header {
     background: #824936;
 }
 
-.care img {
+.care .row img {
     float:left;
 }
