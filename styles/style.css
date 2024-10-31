@@ -43,7 +43,7 @@ header p {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1128px;
     margin: 0 auto;
 }
@@ -71,16 +71,25 @@ header p {
   
 .col-1 {
     flex: 1;
-    border: 2px solid red;
     padding-left:3.5em;
     padding-right: .25em;
+    text-align: left;
 }
 
 .col-2 {
     flex: 1;
-    border: 2px solid red;
     padding-right: 3.5em;
     padding-left: .25em;
+    align-self: stretch;
+    text-align: left;
+}
+
+.col-1 p {
+    margin-top: 0;
+}
+
+.col-2 p {
+    margin-top: 0;
 }
 
 header {
@@ -101,14 +110,30 @@ header {
     background-color: white;
     display:flex;
     flex-direction: column;
+    margin-bottom: 2.5em;
 }
 
 .quality .row .row-item h2 {
     color:#824936;
 }
 
+.quality .row .row-item {
+    padding-bottom:0;
+}
+
+.quality .row .col-1 {
+    padding-right: 1.25em;
+    margin-left: 2em;
+}
+
+.quality .row .col-2 {
+    padding-left: 1.25em;
+    margin-right: 2em;
+}
+
 .custom {
     background: #222C2A;
+
 }
 
 .custom p {
@@ -119,6 +144,25 @@ header {
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: stretch;
+    width:80%;
+    margin-left:4em;
+}
+
+.custom .row .row-item {
+    text-align: left;
+    vertical-align: top;
+}
+
+.custom .row .row-item h2 {
+    margin-top:0;
+}
+
+.custom-first {
+    padding-left: 2em;
+}
+
+.custom img {
+    padding-left: 3em;
 }
 
 .care {
@@ -133,4 +177,25 @@ header {
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: stretch;
+    width: 80%;
+    margin-left: 4.5em;
+}
+
+.care .row .row-item {
+    text-align: left;
+    margin: 0;
+    align-content: flex-start;
+}
+
+.care .row .row-item h2 {
+    margin-top: 0;
+}
+
+.care .row .row-item img {
+    float: right;
+    padding-left: 2em;
+}
+
+.care-second {
+    padding-left: 6em;
 }
