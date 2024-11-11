@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conquering Responsive Layouts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,31 +35,79 @@
     <section class="hero">
         <div class="container row">
             <div class="hero__text">
-                <h1>Responsive layouts don’t have to be a struggle</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <a href="#" class="btn">I want to learn</a>
+                <div class="col">
+                    <h1>Responsive layouts <span class="hero__text--responsive">don’t have to be a struggle</span></h1>
+                </div>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="#" class="btn">I want to learn</a>
+                </div>
             </div>
-            <img src="img/hero-img.jpg" alt="UX design sketches" class="hero__img">
         </div>
     </section> 
 
+    <section class="qualities container row">
+        <div class="qualities__text">
+            <div class="col">
+                <h2>Mobile-First</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in voluptatum iusto, delectus aliquid molestiae earum eligendi esse optio a corrupti doloribus odio mollitia illum maxime soluta aut quas fuga!</p>
+            </div>
+            <div class="col">
+                <h2>Efficient</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab nulla repellat ratione ea officia minima atque repellendus hic nobis veritatis sequi, molestias voluptas vel architecto mollitia dicta assumenda aut?</p>
+            </div>
+            <div class="col">
+                <h2>Done right</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, rerum ratione? Praesentium quasi sed totam animi voluptatum assumenda eaque deleniti, distinctio nostrum explicabo enim ab quas fugiat consequuntur doloremque deserunt?</p>
+            </div>
+        </div>
+    </section>
+
     <main class="main container row">
             <section class="primary-content">
-                <h2 class="section-title">Quality designs made custom, on demand, just for you</h2>
+                <h2 class="section-title">It doesn't have to be so hard</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img src="img/the-image.jpg" alt="UX design sketches" class="hero__img">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </section>
             <aside class="sidebar">
-                <h2 class="sidebar-title">Cheap</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                <h2 class="sidebar-title">Quick</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                <h2 class="sidebar-title">Quality</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="col">
+                    <h2 class="sidebar-title">Break it down</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2 class="sidebar-title">Work your way up</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2 class="sidebar-title">Finish strong</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
             </aside>
     </main>
+    <footer>
+        <div class="container row">
+            <div class="row">
+                <div class="col">
+                    <h3>Just scarthcing the surface</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>About our company</h4>
+                </div>
+                <div class="col">
+                    <h4> Getting around</h4>
+                </div>
+                <div class="col">
+                    <h4>Other things</h4>
+                </div>
+                <div class="col">
+                    <h4>And more</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 
