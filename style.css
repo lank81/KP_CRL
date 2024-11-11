@@ -25,6 +25,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
     margin-top: 0;
     line-height: 6rem;
+    text-align: left;
 }
 
 h2 {
@@ -69,7 +70,7 @@ h4 {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
     /* added for nav-toggle positioning */
@@ -85,7 +86,6 @@ header {
 footer {
     background: #3B4050;
     padding: 1em 0;
-    text-align: left;
 }
 
 .nav {
@@ -221,15 +221,18 @@ footer {
     margin-top: 3em;
 }
 
-.qualities__text {
-    display: flex;
-    justify-content: space-between;
+.qualities__text {}
+
+
+.primary-content {
+    width:100%;
 }
 
 .sidebar {
     padding: 1em;
     text-align: center;
     color: #fff;
+    width: 100%;
 }
 
 .sidebar .col {
@@ -237,7 +240,11 @@ footer {
     margin-bottom: 1em;
 }
 
-@media (min-width: 800px) {
+footer p {
+    color: #FFF;
+}
+
+@media (min-width: 1000px) {
 
     
     .nav-toggle {
@@ -293,5 +300,44 @@ footer {
     .sidebar {
         width: 32%;
     }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .scratching {
+        align-content: center;
+        justify-content: center;
+    }
+
+    footer .about .col {
+        text-align: left;
+        max-width: 50%;
+    }
+
+    .qualities__text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     
+    .sidebar .col {
+        margin-left:0;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .sidebar {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .sidebar .col {
+        margin-left:1em;
+    }
 }
